@@ -1,0 +1,35 @@
+#! /bin/sh
+
+# Import the colors
+. "${HOME}/.cache/wal/colors.sh"
+
+PANEL_FIFO=/tmp/panel-fifo
+PANEL_HEIGHT=22
+PANEL_WM_NAME=bspwn_panel
+
+if xdo id -a "$PANEL_WM_NAME" > /dev/null ; then
+	printf "%s\n" "The panel is already running." >&2
+	exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+bspc subscribe report > "$PANEL_FIFO" &
+xtitle -sf 'T%s\n' > "$PANEL_FIFO" &
+clock -sf 'S%A %B %d %Y %r' > "$PANEL_FIFO" &
+
+panel_bar < "$PANEL_FIFO" | lemonbar -b -a 32 -n "$PANEL_WM_NAME" -g x$PANEL_HEIGHT -f "Pragmata Pro:size=10" -f "Font Awesome" -F "$foreground" -B "#80282a36" | sh &
+
+wid=$(xdo id -a "$PANEL_WM_NAME")
+tries_left=20
+while [ -z "$wid" -a "$tries_left" -gt 0 ] ; do
+	sleep 0.05
+	wid=$(xdo id -a "$PANEL_WM_NAME")
+	tries_left=$((tries_left - 1))
+done
+[ -n "$wid" ] && xdo above -t "$(xdo id -N Bspwm -n root | sort | head -n 1)" "$wid"
+
+wait

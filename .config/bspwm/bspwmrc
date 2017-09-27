@@ -1,0 +1,34 @@
+#! /bin/sh
+
+# Import the colors.
+. "${HOME}/.cache/wal/colors.sh"
+
+sxhkd &
+
+bspc monitor -d         
+
+bspc config border_width         1
+bspc config window_gap           22
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config click_to_focus	 true
+
+bspc rule -a Thunar state=floating
+bspc rule -a URxvt:python state=floating
+bspc rule -a Gvim state=floating
+bspc rule -a Chromium desktop='^2'
+bspc rule -a qBittorrent desktop='^2'
+bspc rule -a URxvt:ncmpcpp desktop='^3' follow=on
+bspc rule -a Spotify desktop='^3'
+bspc rule -a Gimp desktop='^4' state=floating follow=on
+bspc rule -a qemu desktop='^5'
+bspc rule -a URxvt:weechat desktop='^6' follow=on
+
+bspc config presel_feedback_color "$color7"
+bspc config normal_border_color "$color8"
+bspc config focused_border_color "$color7"
+bspc config active_border_color "$color7"
+
+panel &

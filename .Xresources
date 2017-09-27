@@ -1,0 +1,71 @@
+*.font: xft:Pragmata Pro
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.autohint: 1
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+URxvt.depth: 32
+URxvt*termName: rxvt-256color
+URxvt*loginShell: true
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.scrollBar: false
+URxvt.letterSpace: -1
+URxvt.internalBorder: 20
+URxvt.perl-ext: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+*pointerShape: left_ptr
+*pointerBlank: true
+*pointerBlankDelay: 5
+
+! special
+*background: #282a36
+*foreground: #eff0eb
+*cursorColor: #97979b
+
+! black
+*color0: #282a36
+*color8: #686868
+
+! red
+*color1: #ff5c57
+*color9: #ff5c57
+
+! green
+*color2: #5af78e
+*color10: #5af78e
+
+! yellow
+*color3: #f3f99d
+*color11: #f3f99d
+
+! blue
+*color4: #57c7ff
+*color12: #57c7ff
+
+! magenta
+*color5: #ff6ac1
+*color13: #ff6ac1
+
+! cyan
+*color6: #9aedfe
+*color14: #9aedfe
+
+! white
+*color7: #f1f1f0
+*color15: #eff0eb
+
+rofi.font: Pragmata Pro 12
+rofi.width: 500
+rofi.lines: 5
+rofi.hide-scrollbar: true
+rofi.separator-style: solid
+rofi.color-enabled: true
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-window: #80282a36, #50eff0eb, #50eff0eb
+rofi.color-normal: #80282a36, #eff0eb, #80282a36, #5af78e, #80282a36

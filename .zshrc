@@ -10,14 +10,13 @@ zstyle :compinstall filename '/home/couch/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# ( ) # Hide shell job control messages.
+(wal -r &)
 ZLE_RPROMPT_INDENT=0
 zstyle ':completion:*' menu select
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
-# Import colorscheme from 'wal'
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-(wal -r &)
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator background_jobs time)

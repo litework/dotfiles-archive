@@ -37,7 +37,7 @@ while read -r line ; do
 								;;
 							M*)
 								# focused monitor
-								FG=$color1
+								FG=#color15
 								;;
 						esac
 						wm="${wm}%{F${FG}}%{B${BG}}%{A:bspc monitor -f ${name}:} ${name} %{A}%{B-}%{F-}"
@@ -50,15 +50,15 @@ while read -r line ; do
 								;;
 							F*)
 								# focused free desktop
-								FG=$color4
+								FG=#color15
 								;;
 							o*)
 								# occupied desktop
-								FG=$color15
+								FG=$color5
 								;;
 							O*)
 								# focused occupied desktop
-								FG=$color4
+								FG=#color15
 								;;
 							u*)
 								# urgent desktop
@@ -66,7 +66,7 @@ while read -r line ; do
 								;;
 							U*)
 								# focused urgent desktop
-								FG=$color4
+								FG=#color15
 								;;
 						esac
 						wm="${wm}%{F${FG}}%{B${BG}}%{A:bspc desktop -f ${name}:} ${name} %{A}%{B-}%{F-}"
@@ -80,5 +80,5 @@ while read -r line ; do
 			done
 			;;
 	esac
-	printf "%s\n" "%{l}${wm}%{c} %{F$color1}$(nowplaying)%{r}${sys}"
+	printf "%s\n" "%{l}${wm}%{c} %{F$color15}$(nowplaying)%{r}${sys}"
 done

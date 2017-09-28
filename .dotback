@@ -1,0 +1,10 @@
+#! /bin/sh
+# dotfile script
+cp ~/.Xresources ~/.dotfiles/
+cp ~/.zshrc ~/.dotfiles/
+cp ~/.xprofile ~/.dotfiles/
+cp -r ~/.config/bspwm/ ~/.dotfiles/.config/
+cp -r ~/.config/sxhkd/ ~/.dotfiles/.config/
+cp -r ~/.panel/ ~/.dotfiles/
+cp ~/.vimrc ~/.dotfiles/
+cp /etc/X11/xorg.conf ~/.dotfiles/etc/X11/

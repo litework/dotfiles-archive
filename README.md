@@ -2,7 +2,7 @@
 
 These are my dotfiles for my Arch/bspwm desktop. 
 
-**Colourized Screenshots: [https://imgur.com/a/iwSWe](https://imgur.com/a/iwSWe)**
+**Screenshots: [https://imgur.com/a/iwSWe](https://imgur.com/a/iwSWe)**
 
 ![scrot](https://i.imgur.com/ZCgf6LC.png)
 

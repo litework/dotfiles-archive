@@ -4,4 +4,4 @@ numlockx &
 urxvtd -q -f &
 export PATH=$PATH:/home/couch/.panel
 # -R restores the last colorscheme that was in use.
-wal -f ~/.cache/wal/schemes/snazzy.json -a 80
+wal -R -a 80

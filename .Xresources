@@ -7,13 +7,11 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
 URxvt.depth: 32
-URxvt*termName: rxvt-256color
-URxvt*loginShell: true
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.scrollBar: false
 URxvt.letterSpace: -1
-URxvt.internalBorder: 20
+URxvt.internalBorder: 15
 URxvt.perl-ext: default,matcher
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
@@ -67,5 +65,5 @@ rofi.color-enabled: true
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
-rofi.color-window: #80282a36, #50eff0eb, #50eff0eb
-rofi.color-normal: #80282a36, #eff0eb, #80282a36, #5af78e, #80282a36
+rofi.color-window: #80191B15, #50191B15, #50747D82
+rofi.color-normal: #80191B15, #C7D2D1, #80191B15, #747D82, #80191B15

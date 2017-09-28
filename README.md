@@ -1,6 +1,6 @@
 # Dotfiles
 
-These are my dotfiles for my Arch/bspwm desktop. 
+These are my dotfiles for my arch/bspwm desktop. 
 
 **Screenshots: [https://imgur.com/a/iwSWe](https://imgur.com/a/iwSWe)**
 

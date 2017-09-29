@@ -20,8 +20,9 @@ bspc rule -a URxvt:python state=floating
 bspc rule -a Gvim state=floating
 bspc rule -a Chromium desktop='^2'
 bspc rule -a qBittorrent desktop='^2'
-bspc rule -a URxvt:ncmpcpp desktop='^3' follow=on
-bspc rule -a Spotify desktop='^3'
+bspc rule -a URxvt:ncmpcpp desktop='^3' state=floating follow=on
+bspc config external_rules_command "/home/couch/.config/bspwm/spotify"
+bspc rule -a pavucontrol desktop='^3' state=floating follow=on
 bspc rule -a Gimp desktop='^4' state=floating follow=on
 bspc rule -a qemu desktop='^5'
 bspc rule -a URxvt:weechat desktop='^6' follow=on

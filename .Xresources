@@ -15,46 +15,45 @@ URxvt.internalBorder: 15
 URxvt.perl-ext: default,matcher
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
-*pointerShape: left_ptr
-*pointerBlank: true
-*pointerBlankDelay: 5
+URxvt.pointerBlank: true
+URxvt.pointerBlankDelay: 5
 
 ! special
-*background: #282a36
-*foreground: #eff0eb
-*cursorColor: #97979b
+*background: #1d2021
+*foreground: #d5c4a1
+*cursorColor: #ebdbb2
 
 ! black
-*color0: #282a36
-*color8: #686868
+*color0: #1d2021
+*color8: #665c54
 
 ! red
-*color1: #ff5c57
-*color9: #ff5c57
+*color1: #fb4934
+*color9: #fb4934
 
 ! green
-*color2: #5af78e
-*color10: #5af78e
+*color2: #b8bb26
+*color10: #b8bb26
 
 ! yellow
-*color3: #f3f99d
-*color11: #f3f99d
+*color3: #fabd2f
+*color11: #fabd2f
 
 ! blue
-*color4: #57c7ff
-*color12: #57c7ff
+*color4: #83a598
+*color12: #83a598
 
 ! magenta
-*color5: #ff6ac1
-*color13: #ff6ac1
+*color5: #d3869b
+*color13: #d3869b
 
 ! cyan
-*color6: #9aedfe
-*color14: #9aedfe
+*color6: #8ec07c
+*color14: #8ec07c
 
 ! white
-*color7: #f1f1f0
-*color15: #eff0eb
+*color7: #d5c4a1
+*color15: #fbf1c7
 
 rofi.font: Pragmata Pro 12
 rofi.width: 500

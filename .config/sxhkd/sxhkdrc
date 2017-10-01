@@ -128,40 +128,45 @@ super + {minus,equal}
 # non-defaults
 #
 
-# ranger
+# scratchpad
 super + F1
+	id=$(cat /tmp/scratchid);\
+	bspc node $id --flag hidden;bspc node -f $id
+
+# ranger
+super + F2
 	urxvt -name ranger -e ranger	
 
 # thunar 
-super + F2
+super + F3
 	thunar
 
 # chromium
-super + F3
+super + F4
 	chromium
 
 # ncmpcpp 
-super + F4
+super + F5
 	urxvt -name ncmpcpp -e ncmpcpp
 
 # spotify 
-super + F5
+super + F6
 	spotify
 
 # weechat
-super + F6
+super + F7
 	urxvt -name weechat -e weechat
 
 # gimp
-super + F7
+super + F8
 	gimp
 
 # pavucontrol
-super + F8
+super + F9
 	pavucontrol
 
 #qbittorrent
-super + F9
+super + F10
 	qbittorrent	
 
 # printscreen

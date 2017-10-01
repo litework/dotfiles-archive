@@ -11,9 +11,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# ( ) # Hide shell job control messages.
-(wal -r &)
-ZLE_RPROMPT_INDENT=0
 zstyle ':completion:*' menu select
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
@@ -42,3 +39,7 @@ POWERLEVEL9K_STATUS_ERROR_BACKGROUND='000'
 
 POWERLEVEL9K_TIME_FOREGROUND='015'
 POWERLEVEL9K_TIME_BACKGROUND='000'
+
+# ( ) # Hide shell job control messages.
+(wal -r &)
+ZLE_RPROMPT_INDENT=0

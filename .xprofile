@@ -1,3 +1,4 @@
+sxhkd &
 compton --config ~/.config/compton.conf &
 xsetroot -cursor_name left_ptr
 numlockx &

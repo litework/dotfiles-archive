@@ -2,9 +2,6 @@
 
 These are my dotfiles for my arch/bspwm desktop. 
 
-![scrot](https://i.imgur.com/hVoGtxv.png)
-
-
 ## Setup
 
 - Application Launcher: `rofi`

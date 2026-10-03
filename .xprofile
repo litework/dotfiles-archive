@@ -1,8 +1,6 @@
+# -R restore the last colorscheme that was in use.
+wal -R
 sxhkd &
-compton --config ~/.config/compton.conf &
+compton &
 xsetroot -cursor_name left_ptr
-numlockx &
-urxvtd -q -f &
-export PATH=$PATH:/home/couch/.panel
-# -R restores the last colorscheme that was in use.
-wal -R -a 80
+urxvtd -q -f

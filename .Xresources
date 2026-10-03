@@ -1,4 +1,3 @@
-*.font: xft:Pragmata Pro
 Xft.dpi: 96
 Xft.antialias: 1
 Xft.autohint: 1
@@ -6,12 +5,13 @@ Xft.hinting: 1
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
+URxvt.font: xft:otf-pragmata:size=10
 URxvt.depth: 32
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.scrollBar: false
-URxvt.letterSpace: -1
-URxvt.internalBorder: 15
+URxvt.letterSpace: -4
+URxvt.internalBorder: 9
 URxvt.perl-ext: default,matcher
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
@@ -55,7 +55,6 @@ URxvt.pointerBlankDelay: 5
 *color7: #d5c4a1
 *color15: #fbf1c7
 
-rofi.font: Pragmata Pro 12
 rofi.width: 500
 rofi.lines: 5
 rofi.hide-scrollbar: true
